@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 
+import Header from "./Components/Header/Header";
+import KeyPad from "./Components/KeyPad/KeyPad";
+
 import moonIcon from "./assets/moon.png";
 import sunIcon from "./assets/sun.png";
 
 import "./App.css";
+
 
 function App() {
   const [isDarkMode, setIsDarkMode]=useState(false)
@@ -23,7 +27,10 @@ function App() {
             />
           </div>
           <img src={isDarkMode ? moonIcon : sunIcon} alt="mode" />
+        
         </div>
+        <Header />
+        <KeyPad />
 
       </div>
       
